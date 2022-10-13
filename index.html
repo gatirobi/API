@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+
+    <title> Searching Git </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+ 
+</head>
+    <body>
+        <!-- navbar -->
+        <div class="topnav">
+            <a class="active" href="#Home">Home</a>
+            <a href="#search User">Search User</a>
+            <a href="#search Repository">Search Repository</a>
+        </div>
+        
+        <!-- form area -->
+        
+            <div>
+                <!-- <label for="username"> User's name</label> -->
+                <input  id="username" required class="username" placeholder="Username">
+                <button class="search-btn">Search</button>
+            </div>
+            
+        
+
+        <!-- Results area --> 
+        <div class="results">
+            <div id="root"></div>
+            <div class="loading"></div>
+            <div class="error"></div>
+            <div class="data"></div>
+            <div class="result-container">
+                <!-- <img src="" alt="avatar" class="avatar"> -->
+                <p><strong>Following: </strong> <span class="following"></span></p>
+                <p><strong>Followers: </strong> <span class="followers"></span></p>
+                
+            </div>
+
+            <p><strong>Repository: </strong> </p>
+            <div class="repository"> </div>
+
+        </div>
+
+        
+        <script src="./src/index.js"></script>
+
+    </body>
+
+</html>
